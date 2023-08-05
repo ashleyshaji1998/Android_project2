@@ -1,0 +1,40 @@
+<!-- fragment_bottom.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".BottomFragment"
+    android:id="@+id/fragment_root_view">
+
+
+    <ImageView
+        android:id="@+id/wheel_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+
+        android:layout_centerInParent="true"
+        android:src="@drawable/wheeloftime" />
+
+    <TextView
+        android:id="@+id/date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/wheel_image_view"
+
+        android:gravity="center_horizontal"
+        android:text="Current Date and Time"
+        android:textSize="16sp" />
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/wheel_image_view">
+
+    <ImageView
+        android:id="@+id/seasonal"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars" />
+</FrameLayout>
+</RelativeLayout>
