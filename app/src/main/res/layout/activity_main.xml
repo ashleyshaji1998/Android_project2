@@ -32,6 +32,16 @@
         android:layout_marginTop="20dp"
         android:text="Start" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/startbutton"
+        android:layout_alignTop="@id/startbutton"
+        android:layout_marginStart="16dp"
+        android:text="Akshitha Vinod\nPhilip Augustine Naijan\nAshley Shaji" />
+
+
     <Button
         android:id="@+id/stopbutton"
         android:layout_width="wrap_content"
